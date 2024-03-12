@@ -1,0 +1,487 @@
+\hypertarget{vector__operations_8hpp}{}\doxysection{/media/maty/\+Datos/dev/c++/linear-\/algebra/include/vector\+\_\+operations.hpp File Reference}
+\label{vector__operations_8hpp}\index{/media/maty/Datos/dev/c++/linear-\/algebra/include/vector\_operations.hpp@{/media/maty/Datos/dev/c++/linear-\/algebra/include/vector\_operations.hpp}}
+
+
+Library containing basic vectorial operations.  
+
+
+{\ttfamily \#include \char`\"{}vector2.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector3.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for vector\+\_\+operations.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{vector__operations_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector2}{Vector2}} \mbox{\hyperlink{vector__operations_8hpp_a2667b8af51b058d2cb339d53c884ffff}{Vector\+Operations\+::sum}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v1, const \mbox{\hyperlink{classVector2}{Vector2}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{vector__operations_8hpp_a605f0ffc9cf74b54cf3493a36315e03c}{Vector\+Operations\+::sum}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v1, const \mbox{\hyperlink{classVector3}{Vector3}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the sum of the vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2}{Vector2}} \mbox{\hyperlink{vector__operations_8hpp_afae9104c9a6572c6ff53b1b3cfb39e9a}{Vector\+Operations\+::subtract}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v1, const \mbox{\hyperlink{classVector2}{Vector2}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the subtract of the vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{vector__operations_8hpp_aa443f7e0f07a20b2aaa831b54e73a823}{Vector\+Operations\+::subtract}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v1, const \mbox{\hyperlink{classVector3}{Vector3}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the subtract of the vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{vector__operations_8hpp_a317cc963ef670c022fde746e931a1550}{Vector\+Operations\+::cross\+Product}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v1, const \mbox{\hyperlink{classVector3}{Vector3}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the cross product of two vectors using Sarrus algorithm. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector__operations_8hpp_a52378bce3aed0b2084a3a84490077351}{Vector\+Operations\+::dot\+Product}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v1, const \mbox{\hyperlink{classVector2}{Vector2}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the dot product of two vectors. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector__operations_8hpp_a778bff2790c6157857c1f415ea354972}{Vector\+Operations\+::dot\+Product}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v1, const \mbox{\hyperlink{classVector3}{Vector3}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the dot product of two vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2}{Vector2}} \mbox{\hyperlink{vector__operations_8hpp_a1370f7d49386a3ec5bee3969d1a45b90}{Vector\+Operations\+::scale}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v, const double \&scale)
+\begin{DoxyCompactList}\small\item\em Calculates the scale product. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{vector__operations_8hpp_a8b28d9af5bf59ddc7f7eca8a3272ab99}{Vector\+Operations\+::scale}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v, const double \&scale)
+\begin{DoxyCompactList}\small\item\em Calculates the scale product. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector__operations_8hpp_a677f7cef25e8fde0732e403cca080a40}{Vector\+Operations\+::magnitude}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Calculates the magnitude of the vector. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector__operations_8hpp_a6dda7fd9288c2277b3fa906377355ea8}{Vector\+Operations\+::magnitude}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v)
+\begin{DoxyCompactList}\small\item\em Calculates the magnitude of the vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2}{Vector2}} \mbox{\hyperlink{vector__operations_8hpp_a066f5cdbc8964ba61ea005ab3a72814d}{Vector\+Operations\+::unit\+Vector}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Calculates the unit vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{vector__operations_8hpp_ae2249048cd4d55c70c58a0a1fe4f703e}{Vector\+Operations\+::unit\+Vector}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v)
+\begin{DoxyCompactList}\small\item\em Calculates the unit vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\double \mbox{\hyperlink{vector__operations_8hpp_a060709d7e47d48a2beb249148416348e}{Vector\+Operations\+::angle}} (const T \&v1, const T \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the angle between two vectors. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\double \mbox{\hyperlink{vector__operations_8hpp_a964342d512e908dcbf4a68d234c696eb}{Vector\+Operations\+::vector\+Component}} (const T \&v1, const T \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the scale of the proyection vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{vector__operations_8hpp_acb7fc2ba4017ae0505db6ac15bc52cf5}{Vector\+Operations\+::proyection}} (const T \&v1, const T \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the projection vector of V1 on V2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector2}{Vector2}} \mbox{\hyperlink{vector__operations_8hpp_a94593f684d9ee72e9532f0995645aeee}{Vector\+Operations\+::orthogonal\+Vector}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Returns an orthogonal vector of the given one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{vector__operations_8hpp_a21247e33086121e8602d403af5630c14}{Vector\+Operations\+::orthogonal\+Vector}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v)
+\begin{DoxyCompactList}\small\item\em Returns an orthogonal vector of the given one. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector__operations_8hpp_a9816d2a611ef8fff210aba22543c9ed5}{Vector\+Operations\+::vector\+Area}} (const \mbox{\hyperlink{classVector3}{Vector3}} \&v1, const \mbox{\hyperlink{classVector3}{Vector3}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the area between two vectors. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{vector__operations_8hpp_a84e0c5b80bcc39daf8c839d52f9a8a50}{Vector\+Operations\+::vector\+Area}} (const \mbox{\hyperlink{classVector2}{Vector2}} \&v1, const \mbox{\hyperlink{classVector2}{Vector2}} \&v2)
+\begin{DoxyCompactList}\small\item\em Calculates the area between two vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Library containing basic vectorial operations. 
+
+\begin{DoxyAuthor}{Author}
+Casteglione Matias 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2024-\/03-\/09
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2024 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vector__operations_8hpp_a060709d7e47d48a2beb249148416348e}\label{vector__operations_8hpp_a060709d7e47d48a2beb249148416348e}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!angle@{angle}}
+\index{angle@{angle}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{angle()}{angle()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+double Vector\+Operations\+::angle (\begin{DoxyParamCaption}\item[{const T \&}]{v1,  }\item[{const T \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Calculates the angle between two vectors. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em vector} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a317cc963ef670c022fde746e931a1550}\label{vector__operations_8hpp_a317cc963ef670c022fde746e931a1550}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!crossProduct@{crossProduct}}
+\index{crossProduct@{crossProduct}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{crossProduct()}{crossProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Vector\+Operations\+::cross\+Product (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})}
+
+
+
+Calculates the cross product of two vectors using Sarrus algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a52378bce3aed0b2084a3a84490077351}\label{vector__operations_8hpp_a52378bce3aed0b2084a3a84490077351}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!dotProduct@{dotProduct}}
+\index{dotProduct@{dotProduct}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{dotProduct()}{dotProduct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Vector\+Operations\+::dot\+Product (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the dot product of two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a778bff2790c6157857c1f415ea354972}\label{vector__operations_8hpp_a778bff2790c6157857c1f415ea354972}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!dotProduct@{dotProduct}}
+\index{dotProduct@{dotProduct}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{dotProduct()}{dotProduct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Vector\+Operations\+::dot\+Product (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the dot product of two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a677f7cef25e8fde0732e403cca080a40}\label{vector__operations_8hpp_a677f7cef25e8fde0732e403cca080a40}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{magnitude()}{magnitude()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Vector\+Operations\+::magnitude (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the magnitude of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a6dda7fd9288c2277b3fa906377355ea8}\label{vector__operations_8hpp_a6dda7fd9288c2277b3fa906377355ea8}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!magnitude@{magnitude}}
+\index{magnitude@{magnitude}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{magnitude()}{magnitude()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Vector\+Operations\+::magnitude (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the magnitude of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a94593f684d9ee72e9532f0995645aeee}\label{vector__operations_8hpp_a94593f684d9ee72e9532f0995645aeee}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!orthogonalVector@{orthogonalVector}}
+\index{orthogonalVector@{orthogonalVector}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{orthogonalVector()}{orthogonalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2}{Vector2}} Vector\+Operations\+::orthogonal\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an orthogonal vector of the given one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a21247e33086121e8602d403af5630c14}\label{vector__operations_8hpp_a21247e33086121e8602d403af5630c14}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!orthogonalVector@{orthogonalVector}}
+\index{orthogonalVector@{orthogonalVector}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{orthogonalVector()}{orthogonalVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Vector\+Operations\+::orthogonal\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an orthogonal vector of the given one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_acb7fc2ba4017ae0505db6ac15bc52cf5}\label{vector__operations_8hpp_acb7fc2ba4017ae0505db6ac15bc52cf5}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!proyection@{proyection}}
+\index{proyection@{proyection}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{proyection()}{proyection()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T Vector\+Operations\+::proyection (\begin{DoxyParamCaption}\item[{const T \&}]{v1,  }\item[{const T \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the projection vector of V1 on V2. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em vector} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a1370f7d49386a3ec5bee3969d1a45b90}\label{vector__operations_8hpp_a1370f7d49386a3ec5bee3969d1a45b90}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!scale@{scale}}
+\index{scale@{scale}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2}{Vector2}} Vector\+Operations\+::scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v,  }\item[{const double \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the scale product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+{\em scale} & Scale factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a8b28d9af5bf59ddc7f7eca8a3272ab99}\label{vector__operations_8hpp_a8b28d9af5bf59ddc7f7eca8a3272ab99}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!scale@{scale}}
+\index{scale@{scale}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Vector\+Operations\+::scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v,  }\item[{const double \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the scale product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+{\em scale} & Scale factor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_afae9104c9a6572c6ff53b1b3cfb39e9a}\label{vector__operations_8hpp_afae9104c9a6572c6ff53b1b3cfb39e9a}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!subtract@{subtract}}
+\index{subtract@{subtract}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2}{Vector2}} Vector\+Operations\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the subtract of the vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_aa443f7e0f07a20b2aaa831b54e73a823}\label{vector__operations_8hpp_aa443f7e0f07a20b2aaa831b54e73a823}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!subtract@{subtract}}
+\index{subtract@{subtract}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Vector\+Operations\+::subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the subtract of the vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a2667b8af51b058d2cb339d53c884ffff}\label{vector__operations_8hpp_a2667b8af51b058d2cb339d53c884ffff}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!sum@{sum}}
+\index{sum@{sum}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2}{Vector2}} Vector\+Operations\+::sum (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the sum of the vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a605f0ffc9cf74b54cf3493a36315e03c}\label{vector__operations_8hpp_a605f0ffc9cf74b54cf3493a36315e03c}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!sum@{sum}}
+\index{sum@{sum}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Vector\+Operations\+::sum (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the sum of the vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a066f5cdbc8964ba61ea005ab3a72814d}\label{vector__operations_8hpp_a066f5cdbc8964ba61ea005ab3a72814d}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!unitVector@{unitVector}}
+\index{unitVector@{unitVector}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{unitVector()}{unitVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector2}{Vector2}} Vector\+Operations\+::unit\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Calculates the unit vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector2}{Vector2}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_ae2249048cd4d55c70c58a0a1fe4f703e}\label{vector__operations_8hpp_ae2249048cd4d55c70c58a0a1fe4f703e}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!unitVector@{unitVector}}
+\index{unitVector@{unitVector}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{unitVector()}{unitVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Vector\+Operations\+::unit\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Calculates the unit vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a84e0c5b80bcc39daf8c839d52f9a8a50}\label{vector__operations_8hpp_a84e0c5b80bcc39daf8c839d52f9a8a50}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!vectorArea@{vectorArea}}
+\index{vectorArea@{vectorArea}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{vectorArea()}{vectorArea()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Vector\+Operations\+::vector\+Area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector2}{Vector2}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the area between two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a9816d2a611ef8fff210aba22543c9ed5}\label{vector__operations_8hpp_a9816d2a611ef8fff210aba22543c9ed5}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!vectorArea@{vectorArea}}
+\index{vectorArea@{vectorArea}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{vectorArea()}{vectorArea()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Vector\+Operations\+::vector\+Area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v1,  }\item[{const \mbox{\hyperlink{classVector3}{Vector3}} \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the area between two vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vector__operations_8hpp_a964342d512e908dcbf4a68d234c696eb}\label{vector__operations_8hpp_a964342d512e908dcbf4a68d234c696eb}} 
+\index{vector\_operations.hpp@{vector\_operations.hpp}!vectorComponent@{vectorComponent}}
+\index{vectorComponent@{vectorComponent}!vector\_operations.hpp@{vector\_operations.hpp}}
+\doxysubsubsection{\texorpdfstring{vectorComponent()}{vectorComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+double Vector\+Operations\+::vector\+Component (\begin{DoxyParamCaption}\item[{const T \&}]{v1,  }\item[{const T \&}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the scale of the proyection vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em vector} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & Vector \\
+\hline
+{\em v2} & Vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}

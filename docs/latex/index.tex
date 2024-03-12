@@ -1,0 +1,46 @@
+\label{index_md__media_maty_Datos_dev_c___linear_algebra_README}%
+\Hypertarget{index_md__media_maty_Datos_dev_c___linear_algebra_README}%
+ This library provides a set of basic operations for linear algebra in C++. It includes operations such as vector addition, subtraction, dot product, cross product, vector magnitude, and finding perpendicular vectors.\hypertarget{index_autotoc_md1}{}\doxysection{Requirements}\label{index_autotoc_md1}
+C++11 or later is required. Tested with C++20, C++17, C++14 and C++11.\hypertarget{index_autotoc_md2}{}\doxysection{Installation}\label{index_autotoc_md2}
+To use this library in your C++ project, simply include the appropriate header files in your source code and link against the library during compilation.\hypertarget{index_autotoc_md3}{}\doxysection{Usage}\label{index_autotoc_md3}
+Here\textquotesingle{}s a quick guide on how to use the library\+:
+
+
+\begin{DoxyEnumerate}
+\item Include the necessary header files in your C++ code\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{vector__operations_8hpp}{include/vector\_operations.hpp}}"{}}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Perform vector operations using the provided functions\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classVector2}{Vector2}} v1(1, 2);}
+\DoxyCodeLine{\mbox{\hyperlink{classVector2}{Vector2}} v2(3, 4);}
+\DoxyCodeLine{\mbox{\hyperlink{classVector2}{Vector2}} result = \mbox{\hyperlink{vector__operations_8hpp_a2667b8af51b058d2cb339d53c884ffff}{VectorOperations::sum}}(v1, v2);}
+\DoxyCodeLine{std::cout << \textcolor{stringliteral}{"{}Sum of vectors: "{}} << result.\mbox{\hyperlink{classVector2_ab37ebfc71ac92a8e763a386828835ee1}{toString}}() << std::endl;}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Make sure to compile your code with the library linked properly.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{gcc main.cpp src/*.cpp -\/o main.exe}
+
+\end{DoxyCode}
+ 
